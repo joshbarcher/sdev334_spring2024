@@ -3,10 +3,8 @@ package divide_and_conquer;
 public class MergeSort {
     private static int[] temp;
 
-    public static void mergeSort(int[] array)
-    {
-        if (array.length == 0 || array.length == 1)
-        {
+    public static void mergeSort(int[] array) {
+        if (array.length == 0 || array.length == 1) {
             return; // already sorted
         }
 
@@ -16,10 +14,8 @@ public class MergeSort {
     }
 
     public static void mergeSort(
-            int[] array, int low, int high)
-    {
-        if (high - low == 0)
-        {
+            int[] array, int low, int high) {
+        if (high - low == 0) {
             return;
         }
 
@@ -49,8 +45,7 @@ public class MergeSort {
                 temp[low + i] = array[right++];
         }
 
-        for (int i = 0; i < count; i++)
-        {
+        for (int i = 0; i < count; i++) {
             array[low + i] = temp[low + i];
         }
     }
