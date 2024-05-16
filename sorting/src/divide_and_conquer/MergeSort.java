@@ -9,12 +9,10 @@ public class MergeSort {
         }
 
         temp = new int[array.length];
-
         mergeSort(array, 0, array.length - 1);
     }
 
-    public static void mergeSort(
-            int[] array, int low, int high) {
+    private static void mergeSort(int[] array, int low, int high) {
         if (high - low == 0) {
             return;
         }
